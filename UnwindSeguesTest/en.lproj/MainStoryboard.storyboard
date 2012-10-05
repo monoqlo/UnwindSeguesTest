@@ -108,7 +108,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wC1-ha-buy" kind="unwind" unwindAction="reset:" id="5fo-L5-tkq"/>
+                                    <segue destination="wC1-ha-buy" kind="unwind" unwindAction="reset:" id="SOf-yJ-jSa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-4e-Qv6">
@@ -121,7 +121,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wC1-ha-buy" kind="unwind" unwindAction="done:" id="D6c-BG-7lH"/>
+                                    <segue destination="wC1-ha-buy" kind="unwind" unwindAction="done:" id="8jm-dY-7Bk"/>
                                 </connections>
                             </button>
                         </subviews>

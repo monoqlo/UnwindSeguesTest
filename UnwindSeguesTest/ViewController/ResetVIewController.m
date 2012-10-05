@@ -26,6 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Segue
 - (IBAction)reset:(UIStoryboardSegue *)segue {
     NSLog(@"reset");
 }
