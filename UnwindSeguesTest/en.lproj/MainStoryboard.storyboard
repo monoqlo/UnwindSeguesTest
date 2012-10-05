@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="c2m-Xo-xY1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="c2m-Xo-xY1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
@@ -140,17 +140,17 @@
             </objects>
             <point key="canvasLocation" x="1850" y="-39"/>
         </scene>
-        <!--View Controller - Modal-->
+        <!--Moal View Controller - Modal-->
         <scene sceneID="zSk-DG-YL5">
             <objects>
-                <viewController id="vQ2-QN-J2H" sceneMemberID="viewController">
+                <viewController id="vQ2-QN-J2H" customClass="MoalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HOO-a4-uHL">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj3-OS-GAY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hb0-Av-JOH">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Last">
+                                <state key="normal" title="dissmiss">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -158,17 +158,23 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Vit-BP-XSr" kind="push" id="HqV-CD-271"/>
+                                    <action selector="dissmissModalView:" destination="vQ2-QN-J2H" eventType="touchUpInside" id="JXF-P0-YIj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Mj3-OS-GAY" firstAttribute="centerX" secondItem="HOO-a4-uHL" secondAttribute="centerX" type="default" id="8Wa-Iy-XlG"/>
-                            <constraint firstItem="Mj3-OS-GAY" firstAttribute="top" secondItem="HOO-a4-uHL" secondAttribute="top" constant="180" id="sfS-QT-Ovx"/>
+                            <constraint firstItem="Hb0-Av-JOH" firstAttribute="centerX" secondItem="HOO-a4-uHL" secondAttribute="centerX" type="default" id="amV-5E-NJu"/>
+                            <constraint firstItem="Hb0-Av-JOH" firstAttribute="top" secondItem="HOO-a4-uHL" secondAttribute="top" constant="180" id="rFq-X4-gfL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Modal" id="U8j-Ll-Eba"/>
+                    <navigationItem key="navigationItem" title="Modal" id="U8j-Ll-Eba">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="3ni-j5-Lid">
+                            <connections>
+                                <segue destination="Vit-BP-XSr" kind="push" id="m2s-j2-AK1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="846-7S-nDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,6 +201,12 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
             <relationships>
                 <relationship kind="action" name="done:" candidateClass="UIStoryboardSegue"/>
+            </relationships>
+        </class>
+        <class className="MoalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoalViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dissmissModalView:"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
