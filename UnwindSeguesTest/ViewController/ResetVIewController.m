@@ -58,13 +58,19 @@
     return NO;
 }
 
-#pragma mark - Segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // StoryBoard上で Unwind Segue にidentifirを振ることができる
     if ([segue.identifier isEqualToString:@"done"]) {
         FirstViewController *firstVC = (FirstViewController *)[segue destinationViewController];
         firstVC.name = @"hktechno";
     }
+}
+
+- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier {
+    NSLog(@"segueForUnwindingToViewController");
+    FirstViewController *firstVC = [[FirstViewController alloc] init];
+    UIStoryboardSegue *segue = [UIStoryboardSegue segueWithIdentifier:identifier source:self destination:firstVC performHandler:nil];
+    return segue;
 }
 
 @end
