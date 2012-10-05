@@ -124,7 +124,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wC1-ha-buy" kind="unwind" unwindAction="reset:" id="avA-Ml-LdI"/>
+                                    <segue destination="wC1-ha-buy" kind="unwind" identifier="reset" unwindAction="reset:" id="avA-Ml-LdI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-4e-Qv6">
