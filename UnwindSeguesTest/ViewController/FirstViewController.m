@@ -29,6 +29,7 @@
 #pragma mark - Segue
 - (IBAction)done:(UIStoryboardSegue *)segue {
     NSLog(@"done");
+    NSLog(@"name:%@", _name);
 }
 
 @end

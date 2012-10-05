@@ -32,4 +32,9 @@
     // selfに飛ばしてやってもpresentingViewCOntrollerにメッセージを送ってくれるらしい
     //[self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)backToModal:(UIStoryboardSegue *)segue {
+    NSLog(@"test");
+}
+
 @end

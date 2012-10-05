@@ -1,5 +1,5 @@
 //
-//  ResetViewController.h
+//  LastViewController.h
 //  UnwindSeguesTest
 //
 //  Created by 米山 隆貴 on 2012/10/05.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ResetViewController : UIViewController
-
-@property(strong)NSString *name;
+@interface LastViewController : UIViewController
 
 @end

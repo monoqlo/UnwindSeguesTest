@@ -1,5 +1,5 @@
 //
-//  ResetVIewController.m
+//  ResetViewController.m
 //  testExit
 //
 //  Created by 米山 隆貴 on 2012/10/04.
@@ -8,11 +8,11 @@
 
 #import "ResetVIewController.h"
 
-@interface ResetVIewController ()
+@interface ResetViewController ()
 
 @end
 
-@implementation ResetVIewController
+@implementation ResetViewController
 
 - (void)viewDidLoad
 {
@@ -27,9 +27,15 @@
 }
 
 #pragma mark - Segue
-- (IBAction)reset:(UIStoryboardSegue *)segue {
-    NSLog(@"reset");
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    NSLog(@"shouldPerformSegueWithIdentifier");
+    return YES; // NOだと前後問わずSegueが働かない
 }
 
+- (IBAction)reset:(UIStoryboardSegue *)segue {
+    // 返り値がIBActionで、引数がひとつのUIStoryboardSegueであればメソッド名はなんでもよい。
+    NSLog(@"reset");
+    NSLog(@"name:%@", _name);
+}
 
 @end

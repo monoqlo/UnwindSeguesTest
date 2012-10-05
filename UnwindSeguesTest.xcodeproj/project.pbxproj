@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6A0125C2161ED5C700748049 /* MoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0125C1161ED5C700748049 /* MoalViewController.m */; };
+		6A012600161F20FF00748049 /* LastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0125FF161F20FF00748049 /* LastViewController.m */; };
+		6A012614161F249700748049 /* ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A012613161F249700748049 /* ResetViewController.m */; };
 		6AD853AE161D93150087FEEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD853AD161D93150087FEEC /* UIKit.framework */; };
 		6AD853B0161D93150087FEEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD853AF161D93150087FEEC /* Foundation.framework */; };
 		6AD853B2161D93150087FEEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD853B1161D93150087FEEC /* CoreGraphics.framework */; };
@@ -18,13 +20,16 @@
 		6AD853C2161D93150087FEEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD853C1161D93150087FEEC /* Default@2x.png */; };
 		6AD853C4161D93150087FEEC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD853C3161D93150087FEEC /* Default-568h@2x.png */; };
 		6AD853C7161D93150087FEEC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AD853C5161D93150087FEEC /* MainStoryboard.storyboard */; };
-		6AD853D9161D93AA0087FEEC /* ResetVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD853D8161D93AA0087FEEC /* ResetVIewController.m */; };
 		6AD853DC161D93B90087FEEC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD853DB161D93B90087FEEC /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A0125C0161ED5C700748049 /* MoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoalViewController.h; path = ViewController/MoalViewController.h; sourceTree = "<group>"; };
 		6A0125C1161ED5C700748049 /* MoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoalViewController.m; path = ViewController/MoalViewController.m; sourceTree = "<group>"; };
+		6A0125FE161F20FE00748049 /* LastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LastViewController.h; path = ViewController/LastViewController.h; sourceTree = "<group>"; };
+		6A0125FF161F20FF00748049 /* LastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LastViewController.m; path = ViewController/LastViewController.m; sourceTree = "<group>"; };
+		6A012612161F249700748049 /* ResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResetViewController.h; path = ViewController/ResetViewController.h; sourceTree = "<group>"; };
+		6A012613161F249700748049 /* ResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResetViewController.m; path = ViewController/ResetViewController.m; sourceTree = "<group>"; };
 		6AD853A9161D93150087FEEC /* UnwindSeguesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnwindSeguesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD853AD161D93150087FEEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6AD853AF161D93150087FEEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,8 +44,6 @@
 		6AD853C1161D93150087FEEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6AD853C3161D93150087FEEC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6AD853C6161D93150087FEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6AD853D7161D93A00087FEEC /* ResetVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResetVIewController.h; path = ViewController/ResetVIewController.h; sourceTree = "<group>"; };
-		6AD853D8161D93AA0087FEEC /* ResetVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResetVIewController.m; path = ViewController/ResetVIewController.m; sourceTree = "<group>"; };
 		6AD853DA161D93B90087FEEC /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ViewController/FirstViewController.h; sourceTree = "<group>"; };
 		6AD853DB161D93B90087FEEC /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ViewController/FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,10 +120,12 @@
 			children = (
 				6AD853DA161D93B90087FEEC /* FirstViewController.h */,
 				6AD853DB161D93B90087FEEC /* FirstViewController.m */,
-				6AD853D7161D93A00087FEEC /* ResetVIewController.h */,
-				6AD853D8161D93AA0087FEEC /* ResetVIewController.m */,
+				6A012612161F249700748049 /* ResetViewController.h */,
+				6A012613161F249700748049 /* ResetViewController.m */,
 				6A0125C0161ED5C700748049 /* MoalViewController.h */,
 				6A0125C1161ED5C700748049 /* MoalViewController.m */,
+				6A0125FE161F20FE00748049 /* LastViewController.h */,
+				6A0125FF161F20FF00748049 /* LastViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -193,9 +198,10 @@
 			files = (
 				6AD853BA161D93150087FEEC /* main.m in Sources */,
 				6AD853BE161D93150087FEEC /* AppDelegate.m in Sources */,
-				6AD853D9161D93AA0087FEEC /* ResetVIewController.m in Sources */,
 				6AD853DC161D93B90087FEEC /* FirstViewController.m in Sources */,
 				6A0125C2161ED5C700748049 /* MoalViewController.m in Sources */,
+				6A012600161F20FF00748049 /* LastViewController.m in Sources */,
+				6A012614161F249700748049 /* ResetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
