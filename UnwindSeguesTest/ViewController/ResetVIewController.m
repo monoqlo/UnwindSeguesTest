@@ -7,6 +7,7 @@
 //
 
 #import "ResetVIewController.h"
+#import "FirstViewController.h"
 
 @interface ResetViewController ()
 
@@ -33,7 +34,8 @@
 }
 
 - (IBAction)reset:(UIStoryboardSegue *)segue {
-    // 返り値がIBActionで、引数がひとつのUIStoryboardSegueであればメソッド名はなんでもよい。
+    // Unwind用のメソッドは返り値がIBActionで、引数がひとつのUIStoryboardSegueであればメソッド名はなんでもよい。
+    // 左側の丸が白丸のままで繋がっていないように見えるが問題ない
     NSLog(@"reset");
     NSLog(@"name:%@", _name);
 }
@@ -43,6 +45,7 @@
     NSLog(@"action:%s", (char *)action);
     NSLog(@"formVC:%@", fromViewController);
     NSLog(@"sender:%@", sender);
+    
     UIButton *resetButton = (UIButton *)sender;
     
     // 今はてきとーにcurrentTitleで分岐してるが、このようにsenderの要素によって分けたりもできる
@@ -53,6 +56,15 @@
     
     NSLog(@"canPerformUnwindSegueAction:NO");
     return NO;
+}
+
+#pragma mark - Segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // StoryBoard上で Unwind Segue にidentifirを振ることができる
+    if ([segue.identifier isEqualToString:@"done"]) {
+        FirstViewController *firstVC = (FirstViewController *)[segue destinationViewController];
+        firstVC.name = @"hktechno";
+    }
 }
 
 @end

@@ -29,12 +29,12 @@
 - (IBAction)dissmissModalView:(id)sender {
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
     
-    // selfに飛ばしてやってもpresentingViewCOntrollerにメッセージを送ってくれるらしい
+    // selfに飛ばしてやってもpresentingViewControllerにメッセージを送ってくれるらしい
     //[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)backToModal:(UIStoryboardSegue *)segue {
-    NSLog(@"test");
+    NSLog(@"backToModal");
 }
 
 @end
