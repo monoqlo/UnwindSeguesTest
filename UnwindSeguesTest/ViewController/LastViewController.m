@@ -28,6 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // StoryBoard上で Unwind Segue にidentifirを振ることができる
     if ([segue.identifier isEqualToString:@"reset"]) {

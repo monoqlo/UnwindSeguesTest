@@ -43,8 +43,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9NI-9Q-uHN" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="BXM-Vz-DiF"/>
-                            <constraint firstItem="9NI-9Q-uHN" firstAttribute="top" secondItem="3" secondAttribute="top" constant="180" id="MAa-Ie-Drd"/>
+                            <constraint firstItem="9NI-9Q-uHN" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="HsP-Du-iMR"/>
+                            <constraint firstItem="9NI-9Q-uHN" firstAttribute="top" secondItem="3" secondAttribute="top" constant="180" id="K30-Hl-6wS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="First" id="Cun-qD-v0C"/>
@@ -74,7 +74,7 @@
                                     <segue destination="NeY-nP-UNO" kind="modal" id="nJI-lU-nH8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd0-SK-bj9">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd0-SK-bj9">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,10 +90,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jd0-SK-bj9" firstAttribute="centerX" secondItem="NOM-3f-U39" secondAttribute="centerX" type="default" id="1nv-cg-GT8"/>
-                            <constraint firstItem="NOM-3f-U39" firstAttribute="top" secondItem="xWi-Fs-Gv5" secondAttribute="top" constant="173" id="2fl-8a-cLZ"/>
-                            <constraint firstItem="jd0-SK-bj9" firstAttribute="centerX" secondItem="xWi-Fs-Gv5" secondAttribute="centerX" type="default" id="6Fe-GB-Pcm"/>
-                            <constraint firstItem="jd0-SK-bj9" firstAttribute="top" secondItem="xWi-Fs-Gv5" secondAttribute="top" constant="236" id="h1d-Pe-gk1"/>
+                            <constraint firstItem="NOM-3f-U39" firstAttribute="centerX" secondItem="xWi-Fs-Gv5" secondAttribute="centerX" type="default" id="FrG-CJ-dqt"/>
+                            <constraint firstItem="NOM-3f-U39" firstAttribute="top" secondItem="xWi-Fs-Gv5" secondAttribute="top" constant="173" id="MzV-RY-ASr"/>
+                            <constraint firstItem="jd0-SK-bj9" firstAttribute="centerX" secondItem="NOM-3f-U39" secondAttribute="centerX" type="default" id="RdF-8o-r9s"/>
+                            <constraint firstItem="jd0-SK-bj9" firstAttribute="top" secondItem="xWi-Fs-Gv5" secondAttribute="top" constant="236" id="fdj-oX-m8i"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reset" id="8Vc-uK-aRh"/>
@@ -111,10 +111,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ax-rQ-oMV">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="62" id="uVR-oC-K4w"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ax-rQ-oMV">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -127,7 +124,10 @@
                                     <segue destination="wC1-ha-buy" kind="unwind" identifier="reset" unwindAction="reset:" id="avA-Ml-LdI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-4e-Qv6">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-4e-Qv6">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="sXa-PX-GNX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -140,13 +140,30 @@
                                     <segue destination="wC1-ha-buy" kind="unwind" identifier="done" unwindAction="done:" id="8jm-dY-7Bk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-cX-DIv">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reset?">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wC1-ha-buy" kind="unwind" unwindAction="reset:" id="cTz-ma-8l7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2Ob-4e-Qv6" firstAttribute="leading" secondItem="7ax-rQ-oMV" secondAttribute="leading" type="default" id="Lyl-Kf-Ixf"/>
-                            <constraint firstItem="2Ob-4e-Qv6" firstAttribute="top" secondItem="oYM-1B-Z4W" secondAttribute="top" constant="230" id="UMD-Ri-aZD"/>
-                            <constraint firstItem="7ax-rQ-oMV" firstAttribute="leading" secondItem="oYM-1B-Z4W" secondAttribute="leading" constant="131" id="Zga-QM-7Gx"/>
-                            <constraint firstItem="7ax-rQ-oMV" firstAttribute="top" secondItem="oYM-1B-Z4W" secondAttribute="top" constant="157" id="cYY-Ef-1Zd"/>
+                            <constraint firstItem="7ax-rQ-oMV" firstAttribute="leading" secondItem="2Ob-4e-Qv6" secondAttribute="leading" type="default" id="HP1-x8-qCy"/>
+                            <constraint firstItem="bdI-cX-DIv" firstAttribute="trailing" secondItem="7ax-rQ-oMV" secondAttribute="trailing" type="default" id="RXi-cz-5lR"/>
+                            <constraint firstItem="7ax-rQ-oMV" firstAttribute="top" secondItem="2Ob-4e-Qv6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Sil-34-hnS"/>
+                            <constraint firstItem="2Ob-4e-Qv6" firstAttribute="trailing" secondItem="7ax-rQ-oMV" secondAttribute="trailing" type="default" id="Sys-B4-Nq3"/>
+                            <constraint firstItem="2Ob-4e-Qv6" firstAttribute="top" secondItem="oYM-1B-Z4W" secondAttribute="top" constant="118" id="g2D-TI-94h"/>
+                            <constraint firstItem="bdI-cX-DIv" firstAttribute="leading" secondItem="7ax-rQ-oMV" secondAttribute="leading" type="default" id="kJB-c3-Q67"/>
+                            <constraint firstItem="2Ob-4e-Qv6" firstAttribute="leading" secondItem="oYM-1B-Z4W" secondAttribute="leading" constant="132" id="oQl-YY-tbN"/>
+                            <constraint firstItem="bdI-cX-DIv" firstAttribute="top" secondItem="7ax-rQ-oMV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qLy-0q-Txo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Last" id="3QJ-O8-KVS"/>
@@ -180,8 +197,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Hb0-Av-JOH" firstAttribute="centerX" secondItem="HOO-a4-uHL" secondAttribute="centerX" type="default" id="amV-5E-NJu"/>
-                            <constraint firstItem="Hb0-Av-JOH" firstAttribute="top" secondItem="HOO-a4-uHL" secondAttribute="top" constant="180" id="rFq-X4-gfL"/>
+                            <constraint firstItem="Hb0-Av-JOH" firstAttribute="centerX" secondItem="HOO-a4-uHL" secondAttribute="centerX" type="default" id="Nkd-ds-2p9"/>
+                            <constraint firstItem="Hb0-Av-JOH" firstAttribute="top" secondItem="HOO-a4-uHL" secondAttribute="top" constant="180" id="sky-3M-HQz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Modal" id="U8j-Ll-Eba">

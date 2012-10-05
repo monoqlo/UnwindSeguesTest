@@ -38,4 +38,21 @@
     NSLog(@"name:%@", _name);
 }
 
+- (BOOL)canPerformUnwindSegueAction:(SEL)action fromViewController:(UIViewController *)fromViewController withSender:(id)sender {
+    
+    NSLog(@"action:%s", (char *)action);
+    NSLog(@"formVC:%@", fromViewController);
+    NSLog(@"sender:%@", sender);
+    UIButton *resetButton = (UIButton *)sender;
+    
+    // 今はてきとーにcurrentTitleで分岐してるが、このようにsenderの要素によって分けたりもできる
+    if ([resetButton.currentTitle isEqualToString:@"Reset"]) {
+        NSLog(@"canPerformUnwindSegueAction:YES");
+        return YES;
+    }
+    
+    NSLog(@"canPerformUnwindSegueAction:NO");
+    return NO;
+}
+
 @end
