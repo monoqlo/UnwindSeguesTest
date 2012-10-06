@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 @property (weak, nonatomic) IBOutlet UILabel *imgLabel;
 
+- (IBAction)done:(UIStoryboardSegue *)segue;
+
 @end
