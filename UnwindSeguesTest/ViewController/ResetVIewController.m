@@ -15,6 +15,9 @@
 
 @implementation ResetViewController
 
+static NSString * const IMG_RORONA = @"rorona.jpg";
+static NSString * const IMG_NAME_RORONA = @"ロロナ";
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,7 +40,6 @@
     // Unwind用のメソッドは返り値がIBActionで、引数がひとつのUIStoryboardSegueであればメソッド名はなんでもよい。
     // 左側の丸が白丸のままで繋がっていないように見えるが問題ない
     NSLog(@"reset");
-    NSLog(@"name:%@", _name);
 }
 
 - (BOOL)canPerformUnwindSegueAction:(SEL)action fromViewController:(UIViewController *)fromViewController withSender:(id)sender {
@@ -62,7 +64,11 @@
     // StoryBoard上で Unwind Segue にidentifirを振ることができる
     if ([segue.identifier isEqualToString:@"done"]) {
         FirstViewController *firstVC = (FirstViewController *)[segue destinationViewController];
-        firstVC.name = @"hktechno";
+
+        UIImage *img = [UIImage imageNamed:IMG_RORONA];
+        firstVC.imgView.image = img;
+        
+        firstVC.imgLabel.text = IMG_NAME_RORONA;
     }
 }
 

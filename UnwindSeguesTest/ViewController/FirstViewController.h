@@ -10,6 +10,7 @@
 
 @interface FirstViewController : UIViewController
 
-@property(strong)NSString *name;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
+@property (weak, nonatomic) IBOutlet UILabel *imgLabel;
 
 @end

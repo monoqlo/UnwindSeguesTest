@@ -16,6 +16,11 @@
 
 @implementation LastViewController
 
+static NSString * const IMG_PIKACHU = @"pikachu.png";
+static NSString * const IMG_NAME_PIKACHU = @"ぴかちゅう と らいちゅう";
+static NSString * const IMG_TAKOYAKINEKO = @"takoyakineko.png";
+static NSString * const IMG_NAME_TAKOYAKINEKO = @"たこやきねこ";
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -33,10 +38,19 @@
     // StoryBoard上で Unwind Segue にidentifirを振ることができる
     if ([segue.identifier isEqualToString:@"reset"]) {
         ResetViewController *resetVC = (ResetViewController *)[segue destinationViewController];
-        resetVC.name = @"monoqlo";
+        
+        UIImage *img = [UIImage imageNamed:IMG_PIKACHU];
+        resetVC.imgView.image = img;
+        
+        resetVC.imgLabel.text = IMG_NAME_PIKACHU;
+        
     } else if ([segue.identifier isEqualToString:@"done"]) {
         FirstViewController *firstVC = (FirstViewController *)[segue destinationViewController];
-        firstVC.name = @"chocopuyo";
+        
+        UIImage *img = [UIImage imageNamed:IMG_TAKOYAKINEKO];
+        firstVC.imgView.image = img;
+        
+        firstVC.imgLabel.text = IMG_NAME_TAKOYAKINEKO;
     }
 }
 
