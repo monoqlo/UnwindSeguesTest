@@ -66,11 +66,4 @@
     }
 }
 
-- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier {
-    NSLog(@"segueForUnwindingToViewController");
-    FirstViewController *firstVC = [[FirstViewController alloc] init];
-    UIStoryboardSegue *segue = [UIStoryboardSegue segueWithIdentifier:identifier source:self destination:firstVC performHandler:nil];
-    return segue;
-}
-
 @end
